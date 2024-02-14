@@ -1,4 +1,4 @@
-import  dataSource  from "./config/db";
+import  dataSource  from "./db";
 import Ad from "./entities/Ad";
 import Category from "./entities/Category";
 import Tag from "./entities/Tag";

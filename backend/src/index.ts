@@ -9,7 +9,7 @@ import sqlite3 from "sqlite3";
 import Ad from "./entities/Ad";
 import Tag from "./entities/Tag";
 import Category from "./entities/Category";
-import dataSource from "./config/db";
+import dataSource from "./db";
 import { In, Like } from "typeorm";
 
 import { buildSchema } from "type-graphql";
