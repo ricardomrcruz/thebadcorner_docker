@@ -16,8 +16,6 @@ import { buildSchema } from "type-graphql";
 import TagResolver from "./resolvers/TagResolver";
 import AdResolver from "./resolvers/AdResolver";
 
-
-
 buildSchema({ resolvers: [AdResolver, TagResolver] }).then((schema) => {
   const server = new ApolloServer({ schema });
   startStandaloneServer(server, {
@@ -26,10 +24,6 @@ buildSchema({ resolvers: [AdResolver, TagResolver] }).then((schema) => {
     console.log(`server ready on ${url}`);
   });
 });
-
-
-
-
 
 const app = express();
 
